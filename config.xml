@@ -1,0 +1,9 @@
+<widget id="com.phonegapspain.miapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Abako 4-2</name>
+    <description>
+       Abako 4-2
+    </description>
+    <author email="saulocastrog@gmail.com" href="https://tecnologia-sec.negocio.site/">
+        Sec
+    </author>
+</widget>
