@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abako</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- /////////////////// PAGINA 1 //////////////////////////////-->
+
+   <div class="contenedor" >
+        <header>
+            <span>Mi Manual</span>
+        </header>
+
+        <div class="contenido" id="pagina1" style="display:block">
+            <titulos>
+                <div>
+                    <img class="logo" src="escudo.jpg">
+                </div>
+                <div class="titulo">
+                    <h2>Colegio Manuel del Socorro Rodriguez</h2>
+                    <h3>Institución Educativa Distrial</h3>
+                </div>
+            </titulos>
+
+            <section>
+                <h3 style="color:red">GRADO CUARTO</h3>
+                <h4>Navega por los recursos de cada área</h4>
+                <a onclick=paginar(2)>Orientacion</a>
+            </section>
+
+            <nav>
+                <h2>Temas</h2>
+                <a onclick="paginar(3)">Ciencias</a>
+                <a onclick="paginar(4)">Inglés</a>
+                <a onclick="paginar(5)">Español</a>
+                <a onclick="paginar(6)">Matemáticas</a>
+                <a onclick="paginar(7)">Sociales</a>
+            </nav>
+        </div>    
+
+    <!-- /////////////////// PAGINA 2 //////////////////////////////-->
+        <div class="contenido" id="pagina2"  style="display:none">
+            <titulos>
+                <div class="titulo">
+                    <h1>Orientacion</h1>
+                </div>
+            </titulos>
+    
+            <section>
+                <img src="orientacion.jpg" alt="">
+            </section>
+    
+
+        </div>
+
+     <!-- /////////////////// PAGINA 3 //////////////////////////////-->
+        <div class="contenido" id="pagina3"  style="display:none">
+            <titulos>
+                <div class="titulo">
+                    <h1>Ciencias</h1>
+                </div>
+            </titulos>
+            <section>
+                <div>
+                    <h2> </h2>
+                    <video src="ciencias_1.mp4" controls></video>
+                </div>
+                <div>
+                    <h2> </h2>
+                    <video src="ciencias_2.mp4" controls></video>
+                </div>
+                <div>
+                    <h2> </h2>
+                    <video src="ciencias_3.mp4" controls></video>
+                </div>
+
+            </section>
+
+        </div>
+
+            <!-- /////////////////// PAGINA 4 //////////////////////////////-->
+
+        <div class="contenido" id="pagina4"  style="display:none">
+
+            <titulos>
+                <div class="titulo">
+                    <h1>Ingles</h1>
+                </div>
+            </titulos>
+
+            <section>
+                <div>
+                    <h2> </h2>
+                    <img src="Ingles_1.jpg">
+                </div>
+                <div>
+                    <h2> </h2>
+                    <img src="Ingles_2.jpg">
+                </div>
+                <div>
+                    <h2> </h2>
+                    <img src="Ingles_3.jpg">
+                </div>
+
+            </section>
+
+        </div>
+
+                <!-- /////////////////// PAGINA 5 //////////////////////////////-->
+
+        <div class="contenido" id="pagina5"  style="display:none">
+            <titulos>
+                <div class="titulo">
+                    <h1>Español</h1>
+                </div>
+            </titulos>
+
+            <section>
+                <div>
+                    <h2>  </h2>
+                    <video src="español_1.mp4" controls></video>
+                </div>
+                <div>
+                    <h2> </h2>
+                    <video src="español_2.mp4" controls></video>
+                </div>
+                <div>
+                    <h2> </h2>
+                    <img src="español_3.jpg">
+                </div>
+
+            </section>
+
+        </div>
+
+              <!-- /////////////////// PAGINA 6 //////////////////////////////-->
+
+    <div class="contenido" id="pagina6"  style="display:none">
+        <titulos>
+            <div class="titulo">
+                <h1>Matemáticas</h1>
+            </div>
+        </titulos>
+
+        <section>
+            <div>
+                <h2> </h2>
+                <video src="español_1.mp4" controls></video>
+            </div>
+            <div>
+                <h2> </h2>
+                <video src="español_2.mp4" controls></video>
+            </div>
+            <div>
+                <h2> </h2>
+                <img src="español_3.jpg">
+            </div>
+
+        </section>
+
+    </div>
+
+
+            <!-- /////////////////// PAGINA 7 //////////////////////////////-->
+        <div class="contenido" id="pagina7"  style="display:none">
+            <titulos>
+                <div class="titulo">
+                    <h1>Sociales</h1>
+                </div>
+            </titulos>
+
+            <section>
+                <div>
+                    <h2> </h2>
+                    <video src="sociales_1.mp4" controls></video>
+                </div>
+                <div>
+                    <h2> </h2>
+                    <img src="sociales_2.jpg">
+                </div>
+                <div>
+                    <h2> </h2>
+                    <img src="sociales_3.jpg">
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- /////////////////////////  FIN  ////////////////////////////-->
+
+        <nav id="iniciox" style="display: none;"> 
+            <a  onclick="paginar(1)" style="background-color:orange; padding-left:10vw; padding-right:10vw;">Inicio</a>
+        </nav>
+
+        <footer>
+            <span>© Publicaciones Ábako</span>
+        </footer>
+   </div>    
+
+
+   <!-- ////////////////////////////////////////////////////////////////  -->
+
+
+    <script type="text/javascript">
+
+    function paginar(X){
+     
+        pagina1.style.display='none';
+        pagina2.style.display='none';
+        pagina3.style.display='none';
+        pagina4.style.display='none';
+        pagina5.style.display='none';
+        pagina6.style.display='none';
+        pagina7.style.display='none';
+
+        if (X=="1") { iniciox.style.display="none";pagina1.style.display="block"; }
+        if (X=="2") { iniciox.style.display="block";  pagina2.style.display="block"; }
+        if (X=="3") { iniciox.style.display="block";pagina3.style.display="block"; }
+        if (X=="4") { iniciox.style.display="block";pagina4.style.display="block"; }
+        if (X=="5") { iniciox.style.display="block";pagina5.style.display="block"; }
+        if (X=="6") { iniciox.style.display="block";pagina6.style.display="block"; }
+        if (X=="7") { iniciox.style.display="block";pagina7.style.display="block"; }
+    }
+
+</script>
+
+</body>
+
+</html>
